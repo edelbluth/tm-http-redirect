@@ -48,9 +48,9 @@ permanent redirection.
 ```yaml
 experimental:
   plugins:
-    HttpRedirectPlugin:
+    TmHttpRedirectPlugin:
       moduleName: "github.com/edelbluth/tm_http_redirect"
-      version: "v0.2.0"
+      version: "v0.2.1"
 ```
 
 ### Dynamic configuration
@@ -60,7 +60,7 @@ http:
   middlewares:
     OldWebsiteHttpRedirectMiddleware:
       plugin:
-        HttpRedirectPlugin:
+        TmHttpRedirectPlugin:
           redirections:
             - from: "/(.*)"  # Redirect any request...
               to: "https://new.example.com/${1}"
