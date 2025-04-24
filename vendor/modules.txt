@@ -1,0 +1,3 @@
+# git.codebau.dev/goblins/commons v0.0.5
+## explicit; go 1.21
+git.codebau.dev/goblins/commons/pkg/ref

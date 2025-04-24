@@ -1,0 +1,21 @@
+# Traefik Plugin Metadata
+---
+
+displayName: Simple HTTP Redirect Middleware
+type: middleware
+
+import: github.com/edelbluth/tm_http_redirect
+
+iconPath: .assets/icon.png
+bannerPath: .assets/banner.png
+
+summary: Traefik Middleware to redirect HTTP requests to a different URL or path.
+
+testData:
+  redirects:
+    - from: /old-1
+      to: /new-1
+      code: 301
+    - from: /news/(.*)
+      to: /legacy-articles/${1}
+      code: 307
