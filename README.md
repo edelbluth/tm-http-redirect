@@ -1,5 +1,8 @@
 ![Simple HTTP Redirect Middleware for Traefik](./.assets/banner.png)
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/edelbluth/tm_http_redirect)](https://goreportcard.com/report/github.com/edelbluth/tm_http_redirect)
+[![Go (with just)](https://github.com/edelbluth/tm_http_redirect/actions/workflows/go.yml/badge.svg)](https://github.com/edelbluth/tm_http_redirect/actions/workflows/go.yml)
+
 # Simple HTTP Redirect Middleware
 
 This is a simple middleware for [Traefik](https://traefik.io/) that allows you to set up
@@ -50,7 +53,7 @@ experimental:
   plugins:
     TmHttpRedirectPlugin:
       moduleName: "github.com/edelbluth/tm_http_redirect"
-      version: "v0.2.1"
+      version: "v0.2.2"
 ```
 
 ### Dynamic configuration

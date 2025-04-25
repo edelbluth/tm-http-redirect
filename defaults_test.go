@@ -6,7 +6,7 @@ import (
 	"github.com/edelbluth/tm_http_redirect"
 )
 
-// This is only to ensure the constant values do not get changed accidently
+// This is only to ensure the constant values do not get changed accidentally
 func TestDefaultRedirectionStatusCode(t *testing.T) {
 	if tm_http_redirect.DefaultRedirectionStatusCode != 307 {
 		t.Fatalf("unexpected DefaultRedirectionStatusCode: %v", tm_http_redirect.DefaultRedirectionStatusCode)
